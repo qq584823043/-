@@ -15,6 +15,12 @@
 		BFFC8B041CC9BDBD00DC5136 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFFC8B021CC9BDBD00DC5136 /* LaunchScreen.storyboard */; };
 		BFFC8B0F1CC9BDBE00DC5136 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFC8B0E1CC9BDBE00DC5136 /* _____Tests.m */; };
 		BFFC8B1A1CC9BDBE00DC5136 /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFC8B191CC9BDBE00DC5136 /* _____UITests.m */; };
+		BFFC8B2B1CC9BE7C00DC5136 /* CitySelectedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFC8B291CC9BE7C00DC5136 /* CitySelectedViewController.m */; };
+		BFFC8B2C1CC9BE7C00DC5136 /* CitySelectedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFFC8B2A1CC9BE7C00DC5136 /* CitySelectedViewController.xib */; };
+		BFFC8B341CC9BFF600DC5136 /* area.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFFC8B2E1CC9BFF600DC5136 /* area.plist */; };
+		BFFC8B381CC9C06700DC5136 /* pinyin.c in Sources */ = {isa = PBXBuildFile; fileRef = BFFC8B371CC9C06700DC5136 /* pinyin.c */; };
+		BFFC8B3D1CC9C10200DC5136 /* ChineseString.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFC8B3C1CC9C10200DC5136 /* ChineseString.m */; };
+		BFFC8B401CC9C27300DC5136 /* AddressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFC8B3F1CC9C27300DC5136 /* AddressModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,16 @@
 		BFFC8B151CC9BDBE00DC5136 /* 城市选择器UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "城市选择器UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFFC8B191CC9BDBE00DC5136 /* _____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____UITests.m"; sourceTree = "<group>"; };
 		BFFC8B1B1CC9BDBE00DC5136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFFC8B281CC9BE7C00DC5136 /* CitySelectedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitySelectedViewController.h; sourceTree = "<group>"; };
+		BFFC8B291CC9BE7C00DC5136 /* CitySelectedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CitySelectedViewController.m; sourceTree = "<group>"; };
+		BFFC8B2A1CC9BE7C00DC5136 /* CitySelectedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CitySelectedViewController.xib; sourceTree = "<group>"; };
+		BFFC8B2E1CC9BFF600DC5136 /* area.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = area.plist; sourceTree = "<group>"; };
+		BFFC8B371CC9C06700DC5136 /* pinyin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pinyin.c; sourceTree = "<group>"; };
+		BFFC8B3A1CC9C0C000DC5136 /* pinyin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pinyin.h; sourceTree = "<group>"; };
+		BFFC8B3B1CC9C10200DC5136 /* ChineseString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseString.h; sourceTree = "<group>"; };
+		BFFC8B3C1CC9C10200DC5136 /* ChineseString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseString.m; sourceTree = "<group>"; };
+		BFFC8B3E1CC9C27300DC5136 /* AddressModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressModel.h; sourceTree = "<group>"; };
+		BFFC8B3F1CC9C27300DC5136 /* AddressModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +117,7 @@
 		BFFC8AF31CC9BDBD00DC5136 /* 城市选择器 */ = {
 			isa = PBXGroup;
 			children = (
+				BFFC8B271CC9BE1300DC5136 /* Class */,
 				BFFC8AF71CC9BDBD00DC5136 /* AppDelegate.h */,
 				BFFC8AF81CC9BDBD00DC5136 /* AppDelegate.m */,
 				BFFC8AFA1CC9BDBD00DC5136 /* ViewController.h */,
@@ -138,6 +155,39 @@
 				BFFC8B1B1CC9BDBE00DC5136 /* Info.plist */,
 			);
 			path = "城市选择器UITests";
+			sourceTree = "<group>";
+		};
+		BFFC8B271CC9BE1300DC5136 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				BFFC8B2D1CC9BFF600DC5136 /* PinYin */,
+				BFFC8B281CC9BE7C00DC5136 /* CitySelectedViewController.h */,
+				BFFC8B291CC9BE7C00DC5136 /* CitySelectedViewController.m */,
+				BFFC8B2A1CC9BE7C00DC5136 /* CitySelectedViewController.xib */,
+				BFFC8B3E1CC9C27300DC5136 /* AddressModel.h */,
+				BFFC8B3F1CC9C27300DC5136 /* AddressModel.m */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		BFFC8B2D1CC9BFF600DC5136 /* PinYin */ = {
+			isa = PBXGroup;
+			children = (
+				BFFC8B2E1CC9BFF600DC5136 /* area.plist */,
+				BFFC8B2F1CC9BFF600DC5136 /* ChineseSorting */,
+			);
+			path = PinYin;
+			sourceTree = "<group>";
+		};
+		BFFC8B2F1CC9BFF600DC5136 /* ChineseSorting */ = {
+			isa = PBXGroup;
+			children = (
+				BFFC8B371CC9C06700DC5136 /* pinyin.c */,
+				BFFC8B3A1CC9C0C000DC5136 /* pinyin.h */,
+				BFFC8B3B1CC9C10200DC5136 /* ChineseString.h */,
+				BFFC8B3C1CC9C10200DC5136 /* ChineseString.m */,
+			);
+			path = ChineseSorting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +293,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFFC8B2C1CC9BE7C00DC5136 /* CitySelectedViewController.xib in Resources */,
+				BFFC8B341CC9BFF600DC5136 /* area.plist in Resources */,
 				BFFC8B041CC9BDBD00DC5136 /* LaunchScreen.storyboard in Resources */,
 				BFFC8B011CC9BDBD00DC5136 /* Assets.xcassets in Resources */,
 				BFFC8AFF1CC9BDBD00DC5136 /* Main.storyboard in Resources */,
@@ -270,9 +322,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFFC8B381CC9C06700DC5136 /* pinyin.c in Sources */,
+				BFFC8B2B1CC9BE7C00DC5136 /* CitySelectedViewController.m in Sources */,
+				BFFC8B3D1CC9C10200DC5136 /* ChineseString.m in Sources */,
 				BFFC8AFC1CC9BDBD00DC5136 /* ViewController.m in Sources */,
 				BFFC8AF91CC9BDBD00DC5136 /* AppDelegate.m in Sources */,
 				BFFC8AF61CC9BDBD00DC5136 /* main.m in Sources */,
+				BFFC8B401CC9C27300DC5136 /* AddressModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +552,7 @@
 				BFFC8B201CC9BDBE00DC5136 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BFFC8B211CC9BDBE00DC5136 /* Build configuration list for PBXNativeTarget "城市选择器Tests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +561,7 @@
 				BFFC8B231CC9BDBE00DC5136 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BFFC8B241CC9BDBE00DC5136 /* Build configuration list for PBXNativeTarget "城市选择器UITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +570,7 @@
 				BFFC8B261CC9BDBE00DC5136 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
